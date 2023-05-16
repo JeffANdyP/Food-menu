@@ -387,4 +387,9 @@ height: auto;
     .col{
         width:100%
     }
+    #principal-img{
+        width: 300px;
+        height: 300px;
+        padding: 10px 16px;
+    }
 }
