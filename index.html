@@ -13,17 +13,19 @@
 </head>
 
 <body>
+    <div class="language-container">
 
     <header>
         <a href="#" class="logo">Rosarios's Food</a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
-            <li><a href="#home">Inicio (Home)</a> </li>
-            <li><a href="#about">Sobre nosotros (About us)</a> </li>
-            <li><a href="#beverages">Bebidas (Drinks)</a></li>
-            <li><a href="#menu">Tamales</a></li>
-            <li><a href="#others">Destacados(Others)</a></li>
-            <li><a href="#uscontact">Contactenos(Contact us)</a> </li>
+            <!-- <li><a href="#home">swith language</a></li> -->
+            <li><a href="#home" id="homeLink" >Inicio</a> </li>
+            <li><a href="#about" id="aboutLink">Sobre nosotros</a> </li>
+            <li><a href="#beverages" id="beveragesLink">Bebidas </a></li>
+            <li><a href="#menu" >Tamales</a></li>
+            <li><a href="#others" id="othersLink">Destacados</a></li>
+            <li><a href="#uscontact" id="contactLink">Contactenos</a> </li>
         </ul>
     </header>
 
@@ -32,7 +34,8 @@
         <div class="home-text">
             <h1>Rosarios's Food</h1>
             <h2> Una celebración de <br>sabor</h2>
-            <a href="#beverages" class="btn">Menu</a>
+            <a id="languageButton" href="#beverages" class="btn">Menu</a>
+            <!-- <button id="languageButton"class="btn" onclick="changeLanguage()">change language</button> -->
         </div>
 
         <div class="home-img">
@@ -49,22 +52,24 @@
         </div>
 
         <div class="about-text">
-            <span>Sobre nosotros (About Us)</span>
+            <span>Sobre nosotros</span>
             <h2>El Arte de los Tamales, Una Experiencia Culinaria Auténtica<br> en NYC</h2>
-            <p>En Rosarios's Food, estamos dedicados a compartir nuestra pasión por los tamales con el mundo. Somos amantes de la gastronomía 
-                y creemos firmemente en preservar las tradiciones culinarias que nos han sido legadas a lo largo de generaciones. Nuestro objetivo 
-                es ofrecer una experiencia única y auténtica, donde los tamales se convierten en una obra de arte culinaria.</p>
-            <a href="#beverages" class="btn">Revisa el Menu (Check out our menu)</a>
+            <p>En Rosario's Food, estamos dedicados a compartir nuestra pasión por los tamales mexicanos y guatemaltecos con el mundo.
+                 Somos amantes de la gastronomía y creemos firmemente en preservar las tradiciones culinarias que nos han sido legadas 
+                 a lo largo de generaciones. Nuestro objetivo es ofrecer una experiencia única y auténtica, donde los tamales se convierten
+                 en una obra de arte culinaria.</p>
+            <a href="#beverages" class="btn">Revisa el Menu</a>
             <!-- <img src="#" alt="aboutimage"> -->
         </div>
     </section>
 
 
     <!-- menu start -->
+    <!-- beverages section -->
     <section class="menu" id="beverages">
         <div class="heading">
-            <span>Nuestro menu(Our Menu)</span>
-            <h2>Bebidas(Beverages)</h2>
+            <span>Nuestro menu</span>
+            <h2>Bebidas</h2>
         </div>
 
         <div class="menu-container">
@@ -72,27 +77,18 @@
                 <div class="box-img">
                     <img  src="images/Horchatas.jpg" alt="The pic of each products">
                 </div>
-                <h2>Horchata(pequeña)</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h2>Horchata (pequeña)</h2>
+                <h3>Precio:</h3>
+                <span>$3.50</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
                 <div class="box-img">
                     <img  src="images/Horchatas.jpg" alt="The pic of each products">
                 </div>
-                <h2>Horchata(Grande)</h2>
-                <h3>Price:</h3>
-                <span>$5:00(each)</span>
-                <!-- add the icon car in a I element -->
-            </div>
-            <div class="box">
-                <div class="box-img">
-                    <img  src="images/jamaica.jpg" alt="The pic of each products">
-                </div>
-                <h2>Jamaica(Grande)</h2>
-                <h3>Price:</h3>
-                <span>$5:00(each)</span>
+                <h2>Horchata (Grande)</h2>
+                <h3>Precio:</h3>
+                <span>$5.00</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
@@ -100,26 +96,35 @@
                     <img src="images/jamaica.jpg" alt="The pic of each products">
                 </div>
                 <h2>Jamaica (pequeña)</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h3>Precio:</h3>
+                <span>$3:50</span>
+                <!-- add the icon car in a I element -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img  src="images/jamaica.jpg" alt="The pic of each products">
+                </div>
+                <h2>Jamaica (grande)</h2>
+                <h3>Precio:</h3>
+                <span>$5.00</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
                 <div class="box-img">
                     <img src="images/limonada.jpg" alt="The pic of each products">
                 </div>
-                <h2>Limonada (pequeña)</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h2>Limonada</h2>
+                <h3>Precio:</h3>
+                <span>pequeña: $3.50 </br> grande: $5.00</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
                 <div class="box-img">
                     <img  src="images/limonada.jpg" alt="The pic of each products">
                 </div>
-                <h2>Limonada(Grande)</h2>
-                <h3>Price:</h3>
-                <span>$5:00(each)</span>
+                <h2>Limonada (grande)</h2>
+                <h3>Precio:</h3>
+                <span>$5.00</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
@@ -142,7 +147,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Tamales Section -->
     <section class="menu" id="menu">
         <div class="heading">
             <span>Nuestro menu(Our Menu)</span>
@@ -155,8 +160,8 @@
                     <img src="images/tamalesconqueso.jpg" alt="The pic of each products">
                 </div>
                 <h2>Tamal de rajas con queso</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h3>Precio:</h3>
+                <span>$3.00(cada uno)</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
@@ -164,8 +169,8 @@
                     <img src="images/tamales-verdes.jpg" alt="The pic of each products">
                 </div>
                 <h2>Tamal de salsa verde</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h3>Precio:</h3>
+                <span>$3.00(cada uno)</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
@@ -173,34 +178,61 @@
                     <img src="images/tamalesrojos.jpg" alt="The pic of each products">
                 </div>
                 <h2>Tamal de salsa roja</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h3>Precio:</h3>
+                <span>$3.00(cada uno)</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
                 <div class="box-img">
                     <img src="pokemon_PNG149.png" alt="The pic of each products">
                 </div>
-                <h2>Tamal #3</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h2>Tamal dulce con pasas</h2>
+                <h3>Precio:</h3>
+                <span>$3.50(cada uno)</span>
                 <!-- add the icon car in a I element -->
             </div>
             <div class="box">
                 <div class="box-img">
                     <img src="pokemon_PNG149.png" alt="The pic of each products">
                 </div>
-                <h2>Tamal #4</h2>
-                <h3>Price:</h3>
-                <span>$3:00(each)</span>
+                <h2>Tamales de elote</h2>
+                <h3>Precio:</h3>
+                <span>$3.50(cada uno)</span>
+                <!-- add the icon car in a I element -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="pokemon_PNG149.png" alt="The pic of each products">
+                </div>
+                <h2>Paches de Arroz</h2>
+                <h3>Precio:</h3>
+                <span>$5.00(cada uno)</span>
+                <!-- add the icon car in a I element -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="pokemon_PNG149.png" alt="The pic of each products">
+                </div>
+                <h2>Paches de papa</h2>
+                <h3>Precio:</h3>
+                <span>$5.00(cada uno)</span>
+                <!-- add the icon car in a I element -->
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="pokemon_PNG149.png" alt="The pic of each products">
+                </div>
+                <h2>Chuchitos</h2>
+                <h3>Precio:</h3>
+                <span>$3.50(cada uno)</span>
                 <!-- add the icon car in a I element -->
             </div>
         </div>
     </section>
-
+    <!-- Others section  -->
     <section class="menu" id="others">
         <div class="heading">
-            <span>Nuestro menu(Our Menu)</span>
+            <span>Nuestro menu</span>
             <h2>Destacados</h2>
         </div>
 
@@ -281,15 +313,11 @@
                 <h3>Nos puede encotrar en: </br>(Our Location)</h3>
                 <p>6901 Fifth Ave Brooklyn, NY 11209 Unites States </br>Por el momento no deliveries no se encuntran disponibles</p>
             </div>
-            <!-- <div class="s-box">
+            <div class="s-box">
                 <img src="pokemon_PNG149.png" alt="service-image">
-                <h3>other</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vero quisquam possimus, quidem ut voluptatem aliquid nisi
-                    qui quos quas sit deleniti reprehenderit itaque? Delectus
-                    numquam, consectetur architecto asperiores repudiandae
-                    impedit?</p>
-            </div> -->
+                <h3>Otros</h3>
+                <p></p>
+            </div>
 
         </div>
     </section>
@@ -300,7 +328,6 @@
         <h2>Nosotros nos esforzamos para servirle la mejor comida en<br>NYC</h2>
         <a href="#uscontact" class="btn"> Contact Us</a>
     </section>
-    <!-- footer section -->
     <section id="contact">
         <div class="footer">
             <div class="main"> 
@@ -311,26 +338,10 @@
                         <li><a href="#about">about</a></li>
                         <li><a href="#menu">Tamales</a></li>
                         <li><a href="#beverages">Bebidas</a></li>
-                        <!-- <li><a href="#menu">Others</a></li> -->
                         <li><a href="#services">Service</a></li>
                         <li><a href="#uscontact">Contact us</a></li>
                     </ul>
                 </div>
-
-                 <!-- <div class="col">
-                    <h4>Algo extra
-                        (our service)
-                    </h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#tamales">Tamales</a></li>
-                        <li><a href="#beverages">Bebidas</a></li>
-                         <li><a href="#">Others</a></li> -->
-                        <!-- <li><a href="#service">Service</a></li>
-                        <li><a href="#uscontact">Contact us</a></li>
-                    </ul>
-                </div> -->
 
                 <div class="col">
                     <h4>Información (information)</h4>
@@ -342,19 +353,12 @@
                     </ul>
                 </div>
 
-                <!-- <div class="col">
-                    <h4>Our Social Media</h4>
-                    <div class="social">
-                        <a href="#"><box-icon name='facebook-circle' type='logo' color='#25da29' ></box-icon></a>
-                        <a href="#">instagram</a>
-                        <a href="#">some</a>
-                        <a href="#">sdf</a>
-                    </div> -->
                 </div>
             </div>
         </div>
     </section>
-    
+
+</div>
     <!-- This is the Js link -->
     <script type="text/javascript" src="index.js"></script>
 
