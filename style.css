@@ -343,7 +343,7 @@ height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #2b2640;
+    background: #3d355d;
     transform: .3s;
    }
    header .navbar.active{
@@ -385,7 +385,14 @@ height: auto;
 /* double check this code as well */
 @media (max-width: 575px) {
     .col{
-        width:100%
+        width:100%;
+        color: rgb(191, 162, 162);
+    }
+    .col li,a{
+        color: #feeee7;
+    }
+    .col h4{
+        color:var(--main-color)
     }
     #principal-img{
         width: 300px;
