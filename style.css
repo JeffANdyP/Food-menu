@@ -200,6 +200,7 @@ height: auto;
     font-size: var(--p-font);
     color: var(--bg-color);
     font-weight: 600;
+    font-size: medium;
 }
  
 /* This css is for the cart menu */
